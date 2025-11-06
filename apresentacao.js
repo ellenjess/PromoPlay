@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
         goToSlide(targetIndex);
     });
 
-    // Alterado para 10 segundos (10000 ms)
     setInterval(() => {
         let nextIndex = (currentIndex + 1) % slides.length; 
         goToSlide(nextIndex);
@@ -74,3 +73,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateArrows(currentIndex);
 });
+
