@@ -23,13 +23,21 @@ a {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 25px;
-    color: #ffff;
-    background: linear-gradient(-180deg, rgba(0, 15, 46, 1) 14%, rgba(2, 29, 85, 1) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 25px;
+  background: linear-gradient(-180deg, rgba(0, 15, 46, 1) 14%, rgba(2, 29, 85, 1) 100%);
+  
 }
+
+header h1 {
+  font-size: 23px;
+  -webkit-text-stroke: 1px #0A317D; /* Borda no texto */
+  paint-order: stroke fill;
+  font-size: 26px;
+}
+
 
 .logo {
     -webkit-text-stroke: 1px #0A317D;
@@ -39,9 +47,9 @@ header {
 }
 
 .nav-buttons .btn-logout {
-    background-color: #FFE5B4;
+    background-color: #facc15;
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 15px;
     color: #021D55;
     font-weight: bold;
     border: #ffff solid 3px;
@@ -59,7 +67,7 @@ header {
     max-width: 500px;
     background: linear-gradient(0deg, rgba(49, 89, 134, 1) 0%, rgba(2, 29, 85, 1) 100%);
     padding: 2.5rem;
-    border-radius: 10px;
+    border-radius: 15px;
     border: #6b7daf solid 0.3px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     margin: 3rem auto;
@@ -102,7 +110,7 @@ profile-pic .file-label {
 }
 
 .profile-pic .file-label:hover {
-    color: #FFE5B4;
+    color: #fde047;
 }
 
 .form-group {
@@ -121,7 +129,7 @@ profile-pic .file-label {
 .form-group input[type="email"] {
     width: 100%;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #021D55;
     border: #ffff solid 2px;
     font-size: 15px;
@@ -134,16 +142,16 @@ profile-pic .file-label {
 
 .form-group input:focus {
     outline: none;
-    border-color: #FFC300;
-    box-shadow: 0 0 0 2px rgba(255, 195, 0, 0.3);
+    border-color: #facc15;
+    box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.3);
 }
 
 .btn-submit {
     width: 100%;
     padding: 10px;
     margin-top: 15px;
-    background-color: #FFE5B4;
-    border-radius: 5px;
+    background-color: #facc15;
+    border-radius: 15px;
     font-weight: bold;
     border: #ffff solid 3px;
     color: #021D55;
@@ -156,4 +164,3 @@ profile-pic .file-label {
     background-color: #FFB936;
     color: #ffff;
 }
-
