@@ -28,18 +28,20 @@ body {
 }
 
 header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 40px;
-    transition:0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 25px;
+  
 }
 
 header h1 {
-    -webkit-text-stroke: 1px #0A317D;
-    paint-order: stroke fill;
-    font-size: 26px;
+  font-size: 23px;
+  -webkit-text-stroke: 1px #0A317D; /* Borda no texto */
+  paint-order: stroke fill;
+  font-size: 26px;
 }
+
 
 .logo {
     font-size: 1.875rem;
@@ -74,7 +76,7 @@ header h1 {
     font-weight: 700;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
     margin-top: 0;
 }
 
@@ -180,7 +182,7 @@ header h1 {
 }
 
 .info-section {
-    padding-bottom: 5rem;
+    padding-bottom: rem;
     text-align: center;
 }
 
@@ -188,10 +190,13 @@ header h1 {
     font-size: 1.875rem;
     font-weight: 800;
     color: #ffffff;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .info-subtitle {
@@ -200,25 +205,25 @@ header h1 {
     max-width: 48rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    line-height: 23px;
 }
 
 .info-details {
-    max-width: 56rem;
-    margin-top: 50px;
+    max-width: 70rem;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     color: #d1d5db;
     font-size: 1.125rem;
+    line-height: 23px;
 }
 
 .info-details p {
     margin: 0;
-    line-height: 25px;
 }
 
 .highlight {
@@ -227,7 +232,8 @@ header h1 {
 }
 
 .info-actions {
-    margin-top: 4rem;
+    margin-top: 5rem;
+    margin-bottom: -1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -333,3 +339,7 @@ header h1 {
   left: -2px;
 }
 
+.coingif {
+    width: 80px;
+    height: 80px;
+}
