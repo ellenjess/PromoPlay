@@ -20,11 +20,32 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
   const email = document.getElementById("email").value;
   const senha = document.getElementById("senha").value;
 
+
+
   try {
     await signInWithEmailAndPassword(auth, email, senha);
     alert("Login realizado com sucesso!");
-    window.location.href = "home.html"; // se quiser redirecionar
+    window.location.href = "home.html"; 
   } catch (error) {
-    alert("Erro ao entrar: " + error.message);
+
+    
+    switch (error.code) {
+      case "auth/invalid-credential":
+      case "auth/user-not-found":
+      case "auth/wrong-password":
+        alert("E-mail ou senha incorretos. Tente novamente.");
+        break;
+        
+      case "auth/invalid-email":
+        alert("O endereço de e-mail não é válido.");
+        break;
+
+      case "auth/too-many-requests":
+        alert("Muitas tentativas falhas. Aguarde alguns minutos e tente de novo.");
+        break;
+
+      default:
+        alert("Ocorreu um erro inesperado: " + error.message);
+    }
   }
 });
